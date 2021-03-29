@@ -16,9 +16,9 @@ body {
     position: relative;
 }
 
-.burger1,.burger2,.burger3 {
+/* .burger1,.burger2,.burger3 {
     cursor: pointer;
-}
+} */
 
 .burger {
     display: inline-block;
@@ -27,7 +27,7 @@ body {
     height: 80px;
     margin: 50px 80px;
     cursor: pointer;
-    transition-duration: .5s;
+    transition-duration: 1s;
 }
 
 .icon {
@@ -38,7 +38,7 @@ body {
     width: 80px;
     height: 15px;
     border-radius: 15px;
-    display: inline-block;
+    /* display: inline-block; */
     transition-duration: .5s;
 }
 
@@ -79,23 +79,27 @@ body {
     transition-delay: 0.5s;
 }
 .burger2.icon:after {
-    transition: transform .5s, top .5s .5s;
+    transition: transform 0.5s, top 0.5s 0.5s;
 }
 .burger2.icon:before {
-    transition: transform .5s, top .5s .5s;
+    transition: transform 0.5s, top 0.5s 0.5s;
 }
 
 .burger2.open .icon {
-    background: transparent;
     transition-duration: 0.1s;
     transition-delay: 0.5s;
+    background: transparent;
 }
 
 .burger2.open .icon:after {
+    transition: top 0.4s, transform 0.5s 0.5s;
     top: 0px;
+    transform: rotateZ(45deg);
 }
 .burger2.open .icon:before {
+    transition: top 0.5s, transform 0.5s 0.5s;
     top: 0px;
+    transform: rotateZ(-45deg);
 }
 
 
