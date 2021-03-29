@@ -65,7 +65,7 @@ body {
     height: 80px;
     margin: 50px 80px;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: .7s;
 }
 
 /* transitions */
@@ -107,3 +107,40 @@ body {
 
 
 /* burger3 */
+.burger3.open .icon {
+    background: transparent;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.burger3.open .icon:before{
+    transition: top 0.4s, transform 0.5s 0.5s;
+    top: 0px;
+    transform: rotateZ(45deg);
+}
+
+.burger3.open .icon:after{
+    transition: top 0.4s, transform 0.5s 0.5s;
+    top: 0px;
+    transform: rotateZ(-405deg);
+}
+
+
+/* burger4 */
+.burger4.open .icon {
+    background: transparent;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.burger4.open .icon:before{
+    transition: top 0.4s, transform 0.5s 0.5s;
+    transform: rotateZ(45deg) translate(15px, 20px);
+    transition-delay: 0.2s;
+}
+
+.burger4.open .icon:after{
+    transition: top 0.4s, transform 0.5s 0.5s;
+    transform: rotateZ(-405deg) translate(15px, -20px);
+    transition-delay: 0.2s;
+}

@@ -10,6 +10,10 @@ $(document).ready(function(){
     $(".burger3").click(function(){
       $(".burger3").toggleClass("open");
     })
+
+    $(".burger4").click(function(){
+      $(".burger4").toggleClass("open");
+    })
 });
 
 console.log('hello there');
